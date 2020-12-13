@@ -84,7 +84,7 @@ index dbecf605..244960d7 100755
  
          # replace any extra whitespace characters:
 -        self.sourceFont.familyname = " ".join(familyname.split())
-+        self.sourceFont.familyname = "Sarasa Mono SC Nerd"
++        self.sourceFont.familyname = "Sarasa Mono TC Nerd"
          self.sourceFont.fullname   = " ".join(fullname.split())
 -        self.sourceFont.fontname   = " ".join(fontname.split())
 +        style = self.sourceFont.fullname.split()[3:-1]
@@ -116,32 +116,32 @@ index dbecf605..244960d7 100755
 -        self.sourceFont.appendSFNTName(str('English (US)'), str('Compatible Full'), self.sourceFont.fullname)
 -        self.sourceFont.appendSFNTName(str('English (US)'), str('SubFamily'), subFamily)
 +        self.sourceFont.appendSFNTName(
-+            str("Chinese (PRC)"),
++            str("Chinese (Taiwan)"),
 +            str("Preferred Family"),
-+            self.sourceFont.familyname.replace("Sarasa", "更纱黑体"),
++            self.sourceFont.familyname.replace("Sarasa", "更紗黑體"),
 +        )
 +        self.sourceFont.appendSFNTName(
-+            str("Chinese (PRC)"),
++            str("Chinese (Taiwan)"),
 +            str("Family"),
-+            self.sourceFont.familyname.replace("Sarasa", "更纱黑体"),
++            self.sourceFont.familyname.replace("Sarasa", "更紗黑體"),
 +        )
 +        self.sourceFont.appendSFNTName(
-+            str("Chinese (PRC)"),
++            str("Chinese (Taiwan)"),
 +            str("Fullname"),
-+            self.sourceFont.fullname.replace("Sarasa", "更纱黑体"),
++            self.sourceFont.fullname.replace("Sarasa", "更紗黑體"),
 +        )
 +        self.sourceFont.appendSFNTName(
-+            str("Chinese (PRC)"),
++            str("Chinese (Taiwan)"),
 +            str("Compatible Full"),
-+            self.sourceFont.fullname.replace("Sarasa", "更纱黑体"),
++            self.sourceFont.fullname.replace("Sarasa", "更紗黑體"),
 +        )
 +        self.sourceFont.appendSFNTName(
-+            str("Chinese (PRC)"), str("SubFamily"), subFamily
++            str("Chinese (Taiwan)"), str("SubFamily"), subFamily
 +        )
 +        self.sourceFont.appendSFNTName(
-+            str("Chinese (PRC)"),
++            str("Chinese (Taiwan)"),
 +            str("UniqueID"),
-+            self.sourceFont.fullname.replace("Sarasa", "更纱黑体"),
++            self.sourceFont.fullname.replace("Sarasa", "更紗黑體"),
 +        )
          self.sourceFont.comment = projectInfo
          self.sourceFont.fontlog = projectInfo

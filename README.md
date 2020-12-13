@@ -1,44 +1,37 @@
+S 改 T
+
 ## 关于
 
-[Sarasa Mono SC](https://github.com/be5invis/Sarasa-Gothic)字体打了 [Nerd
-fonts](https://github.com/ryanoasis/nerd-fonts)补丁。
+[Sarasa Mono TC](https://github.com/be5invis/Sarasa-Gothic)字體打了 [Nerd fonts](https://github.com/ryanoasis/nerd-fonts)補丁。
 
-文字效果如下：
+文字效果如下(沒改T)：
 ![文字效果](screenshots/character.png)
 
-图标效果如下：
-![图标效果](screenshots/icon.png)
+圖示效果如下(沒改T)：
+![圖示效果](screenshots/icon.png)
 
 ## 安装
-MacOS 用户可以直接通过cask安装：
-``` sh
-brew tap laishulu/cask-fonts
-brew cask install font-sarasa-nerd
-```
+MacOS 使用者不可以直接透過cask安裝：
 
 ## 使用
-在你的主题配置文件中，使用 `Sarasa Mono SC Nerd`。
+在你的主題設定檔文件中，使用 `Sarasa Mono TC Nerd`。
 
-## 说明
-- `等距更纱黑体 SC` 是极少数做到中文和英文2:1严格对齐的字体，适合用来写代码, 以
-  及 org mode 里中英文混合的表格对齐等。
-- `Nerd fonts` 提供了很多图标字体，特别适合各种Shell/NeoVim/Emacs主题，例如 zsh 的
+## 說明
+- `等距更紗黑體 TC` 是極少數做到中文和英文2:1嚴格對齊的字體，適合用來寫程式碼, 以及 org mode 裡中英文混合的表格對齊等。
+- `Nerd fonts` 提供了很多圖示字體，特別適合各種Shell/NeoVim/Emacs主題，例如 zsh 的
   [`p10k`](https://github.com/romkatv/powerlevel10k), 
   [`Powerline`](https://github.com/powerline/powerline) 等等。
-- 本项目将 `Nerd fonts` 打补丁到 `等距更纱黑体 SC` 中，但并没有选择全部 `Nerd
-  fonts` 图标集，而是将 `material design` 剔除，原因是：
-  - 这个图标集很大，和很多汉字冲突，连 `不` 字都不能正常显示。
-  - 在写代码这个使用场景中，这个图标集没什么用。
-- 本项目对图标字体的长宽进行了调整，使之完美符合2:1，不会出现高度不对齐的
-  问题。
-- 本项目对字体在`Chinese (PRC)`和`English (US)`下的`Family`, `SubFamily`和
-  `UniqueID`等多个属性进行了设置，避免了很多问题。
+- 本項目將 `Nerd fonts` 打補丁到 `等距更紗黑體 TC` 中，但並沒有選擇全部 `Nerd fonts` 圖示集，而是將 `material design` 剔除，原因是：
+  - 這個圖示集很大，和很多漢字衝突，連 `不` 字都不能正常顯示。
+  - 在寫程式碼這個使用場景中，這個圖示集沒什麼用。
+- 本項目對圖示字體的長寬進行了調整，使之完美符合2:1，不會出現高度不對齊的問題。
+- 本項目對字體在`Chinese (Taiwan)`和`English (US)`下的`Family`, `SubFamily`和`UniqueID`等多個屬性進行了設定，避免了很多問題。
 
-## 基于其它 Sarasa 字体
+## 基於其它 Sarasa 字體
 
-1. 进入 `nerd font` 源码目录，将本项目 *scripts* 目录下的文件拷贝过去。
-2. `git checkout <commit-id>` 其中的 `commit-id` 来自于
+1. 進入 `nerd font` 原始碼目錄，將本項目 *scripts* 目錄下的文件複製過去。
+2. `git checkout <commit-id>` 其中的 `commit-id` 來自於
    *nerd-font-commit.txt*
-3. 运行 *./patch.sh*
-4. 修改 *font-patcher* 文件中 `Mono SC` (约第87行)
-5. 把 *./generate.sh* 中的字体路径改好，然后执行
+3. 執行 *./patch.sh*
+4. 修改 *font-patcher* 文件中 `Mono TC` (約第87行)
+5. 把 *./generate.sh* 中的字體路徑改好，然後執行
